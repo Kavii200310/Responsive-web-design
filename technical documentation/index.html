@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Java Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Getting_Started_With_Java">Getting Started With Java</a></li>
+            <li><a class="nav-link" href="#Java_Entry_Point">Java Entry Point</a></li>
+            <li><a class="nav-link" href="#Printing_to_the_Console">Printing to the Console</a></li>
+            <li><a class="nav-link" href="#Declaring_Functions">Declaring Functions</a></li>
+            <li><a class="nav-link" href="#Object-Oriented_Programming">Object-Oriented Programming</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
+        <section class="main-section" id="Getting_Started_With_Java">
+            <header>Getting Started With Java</header>
+            <p>Steps to get started:</p>
+            <ol>
+                <li>Install the JDK appropriate for your operating system.</li>
+                <li>Use an IDE such as IntelliJ IDEA, Eclipse, or NetBeans. You can also use a text editor like VS Code.</li>
+                <li>Configure your environment variables (e.g., `JAVA_HOME`) and ensure `javac` and `java` commands are accessible from the terminal.</li>
+                <li>Create your first Java file using the `.java` extension, such as `HelloWorld.java`.</li>
+            </ol>
+        </section>
+        
+        <section class="main-section" id="Java_Entry_Point">
+            <header>Java Entry Point</header>
+            <p>The entry point of a Java application is the `main` method.</p>
+            <p>This method must have the following signature:</p>
+            <ul>
+                <li><strong>public:</strong> Makes the method accessible to the JVM.</li>
+                <li><strong>static:</strong> Allows the method to run without creating an instance of the class.</li>
+                <li><strong>void:</strong> Indicates the method does not return any value.</li>
+                <li><strong>String[] args:</strong> Allows passing command-line arguments to the program.</li>
+            </ul>
+            <pre>
+                <code>
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Welcome to Java!");
+        }
+    }
+                </code>
+            </pre>
+        </section>
+        
+        <section class="main-section" id="Printing_to_the_Console">
+            <header>Printing to the Console</header>
+            <p>Java provides the `System.out.println` method to print text to the console.</p>
+            <p>Printing to the console is primarily used for debugging, displaying program results, and providing information to the user. However, it is not recommended for production-level logging, where robust logging frameworks are preferred.</p>
+            <ol>
+                <li>Print a simple message:</li>
+                <pre><code>System.out.println("Hello, Java!");</code></pre>
+                <li>Print variables:</li>
+                <pre><code>
+    int age = 25;
+    System.out.println("Age: " + age);
+                </code></pre>
+                <li>Print without a newline:</li>
+                <pre><code>System.out.print("This is inline text.");</code></pre>
+            </ol>
+        </section>
+        
+        <section class="main-section" id="Declaring_Functions">
+            <header>Declaring Functions</header>
+            <p>In Java, functions (or methods) are blocks of code that perform specific tasks. </p>
+            <p>Functions must be declared within a class.</p>
+            <p>General syntax:</p>
+            <pre>
+                <code>
+    accessModifier returnType methodName(parameters) {
+        // Method body
+    }
+                </code>
+            </pre>
+            <h5>Example:</h5>
+            <pre>
+                <code>
+    public class Calculator {
+        public int add(int a, int b) {
+            return a + b;
+        }
+    
+        public static void main(String[] args) {
+            Calculator calc = new Calculator();
+            int result = calc.add(5, 7);
+            System.out.println("Sum: " + result);
+        }
+    }
+                </code>
+            </pre>
+        </section>
+        
+        <section class="main-section" id="Object-Oriented_Programming">
+            <header>Object-Oriented Programming</header>
+            <p>Java is a fully object-oriented programming language, emphasizing the use of objects and classes to structure programs.</p>
+            <p>Key principles of OOP in Java include:</p>
+            <ol>
+                <li><strong>Encapsulation:</strong> Wrapping data and methods together in a class to protect and manage them.</li>
+                <li><strong>Inheritance:</strong> Creating new classes from existing ones to promote reusability.</li>
+                <li><strong>Polymorphism:</strong> Using a single interface to represent different types of behavior.</li>
+                <li><strong>Abstraction:</strong> Hiding implementation details while exposing functionality.</li>
+            </ol>
+        </section>
+        
+        <footer>
+            <p>Documentation brought to you by kavii Herath</p>
+        </footer>
+    </main>
+</body>
+</html>

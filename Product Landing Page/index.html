@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Poppins:wght@500&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>   
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img src="data:image/png;base64,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"
+                 alt="logo"
+                 
+                 id="header-img">
+                 <span class="the-product">
+                    Classic Books
+                 </span>
+            </div>
+
+                  <ul class="nav-links">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#audio" class="nav-link">Free Audio Books</a></li>
+                    <li><a href="#for-sale" class="nav-link">For Sale</a></li>
+            
+                  </ul>
+           
+        </nav>
+    </header>
+    <section id="email-section">
+        <h2>Timeless Treasures of Literature </h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" id="email" required placeholder="Enter Your Email address" name="email">
+            <input type="submit" value="Get Started" id="submit">
+        </form>
+    </section>
+    <section id="features">
+        <div class="feature">
+            <i class="ri-file-paper-fill ri-4x icon"></i>
+            <div>
+                <h2>
+                    Premium Materials: Timeless Elegance in Every Details
+                </h2>
+                <p>
+                    Our books are crafted with care to last a lifetime. From durable hardcover bindings to high-quality acid-free paper, each edition is a work of art.
+                </p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="ri-truck-fill ri-4x icon"></i>
+            <div>
+                <h2>Fast, Reliable Shipping: One Day, Every Time</h2>
+                <p>Don’t wait to dive into your next literary adventure. Enjoy one-day shipping on all orders, ensuring your new favorite book arrives when you need it.</p>
+
+            
+            </div>
+        </div>
+        <div class="feature">
+            <i class="ri-book-open-fill ri-4x icon"></i>
+            <div>
+                <h2>Quality You Can Trust: Only the Best Books</h2>
+                <p>We handpick editions that meet our strict quality standards, ensuring every book is as delightful to hold as it is to read.</p>
+    
+
+            </div>
+        </div>
+
+    </section>
+    <section id="audio">
+        <iframe id="video"  height="500" src="https://www.youtube.com/embed/hGt4A8lHNYo?si=pV3vODCxM2rCisRt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+    <section id="for-sale">
+        <h2>For Sale</h2>
+        <div class="product-card">
+           
+            <div class="card">
+                <div class="product-image product1"></div>
+                <div class="inner-card"></div>
+                <div class="author">Holly Black</div>
+                <h1 class="header">The Cruel Prince </h1>
+                <p class="content">By #1 New York Times bestselling author Holly Black, the first book in a stunning new series about a mortal girl who finds herself caught in a web of royal faerie intrigue. Of course I want to be like them. They're beautiful as blades forged in some divine fire.</p>
+                <div class="flex">
+                    <p class="main-price">$16.12</p>
+                    <p class="old-price">$19.29</p>
+                </div>
+                <button class="add">
+                    <p style="margin-left: 5px">Add to cart</p>
+                </button>
+
+            </div>
+
+            <div class="card">
+                <div class="product-image product2"></div>
+                <div class="inner-card"></div>
+                <div class="author">Holly Black</div>
+                <h1 class="header"> The Wicked King</h1>
+                <p class="content">A heady blend of courtly double-crossing, Faerie lore, and toxic attraction swirls together in the sequel to The Cruel Prince (2018). Five months after engineering a coup, human teen Jude is starting to feel the strain of secretly controlling King Cardan and running his Faerie kingdom</p>
+                <div class="flex">
+                    <p class="main-price">$16.12</p>
+                    <p class="old-price">$19.29</p>
+                </div>
+                <button class="add">
+                    <p style="margin-left: 5px">Add to cart</p>
+                </button>
+
+            </div>
+
+            <div class="card">
+                <div class="product-image product3"></div>
+                <div class="inner-card"></div>
+                <div class="author">Holly Black</div>
+                <h1 class="header">The Queen of Nothing </h1>
+                <p class="content">When her twin sister Taryn shows up asking of a favor, Jude jumps at the chance to return to the Faerie world, even if it means facing Cardan. When a dark curse is unveiled, Jude must become the first mortal Queen of Faerie and uncover how to break the curse, or risk upsetting the balance of the whole Faerie world.</p>
+                <div class="flex">
+                    <p class="main-price">$16.12</p>
+                    <p class="old-price">$19.29</p>
+                </div>
+                <button class="add">
+                    <p style="margin-left: 5px">Add to cart</p>
+                </button>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
