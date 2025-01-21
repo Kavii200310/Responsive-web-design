@@ -1,2 +1,2 @@
 # Responsive-web-design
-Responcive web desighn certificate
+projects done for Responcive web design certificate on free code camp
